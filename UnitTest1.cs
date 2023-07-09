@@ -84,9 +84,9 @@ namespace Someunittest1
             Assert.That(actual, Is.EqualTo(expected));
         }
 
-        [Test]
+        [Test, Timeout(2000)]
         [Retry(1)]
-        //[Test, Timeout(2000)]
+        [Description("Will Effectively Perform the same function as Capitalize in Python")]
         //[Test, RequiresThread]
         public void Test4()
         {
@@ -95,4 +95,4 @@ namespace Someunittest1
             Assert.That(actual, Is.EqualTo(expected));
         }
     }
-}
+} 
